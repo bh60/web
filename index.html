@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<embed src="life_is_short.mp3" autostart=true hidden=true loop=true volume="100"/>
+<audio id="audio" src="life_is_short.mp3" style="opacity:0" preload="auto" controls loop hidden="true"/>  
 <meta charset="UTF-8">
 <title>60 Brother House</title>
 </head>
 	<script language="javascript">
+		var myAuto = document.getElementById('audio');  
+                    myAuto.play();  
 		for(i=0;i<5;i++){
 　			document.write(i);
 		}
